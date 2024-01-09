@@ -1,1 +1,12 @@
 @use "tools/resets";
+@use "helpers/global-variables" as *;
+
+
+@use "components/header";
+
+
+body {
+    font-family: #{$font-family};
+    font-size: $main-font-size;
+    padding: 2.5rem;
+}
