@@ -3,4 +3,10 @@
 header {
     margin-bottom: 1.8rem;
     text-align: center;
+
+    @each $weight-value in $font-weights {
+        .header__text--weight-#{$weight-value} {
+            font-weight: $weight-value;
+        }
+    }
 }

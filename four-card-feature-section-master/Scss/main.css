@@ -15,4 +15,13 @@ body {
 header {
   margin-bottom: 1.8rem;
   text-align: center;
+}
+header .header__text--weight-400 {
+  font-weight: 400;
+}
+header .header__text--weight-600 {
+  font-weight: 600;
+}
+header .header__text--weight-200 {
+  font-weight: 200;
 }/*# sourceMappingURL=main.css.map */
