@@ -1,0 +1,13 @@
+@use "../helpers/global-variables" as *;
+
+main {
+    & > :not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @each $color, $value in $primary-colors {
+        & > .card--border-#{$color} {
+            border-top: solid 4.5px $value;
+        }
+    }
+}
