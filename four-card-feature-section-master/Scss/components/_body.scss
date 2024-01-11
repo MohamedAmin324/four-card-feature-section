@@ -3,6 +3,6 @@
 body {
     font-family: #{$font-family};
     font-size: $main-font-size;
-    padding: 2.5rem;
+    padding: clamp(2.5rem, 6vw, 9.5rem);
     background-color: lighten(map-get($map: $neutral-colors, $key: "Grayish Blue"), 34.5);
 }

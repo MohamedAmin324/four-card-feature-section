@@ -10,4 +10,20 @@ main {
             border-top: solid 4.5px $value;
         }
     }
+
+    @include set-desktop-layout(map-get($breakpoints, "desktop")) {
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(3, 1fr);
+
+        & > :last-child {
+            grid-column: 2 / 3;
+        }
+
+        & > :nth-child(odd) {
+            grid-row:  span 2;
+            height: fit-content;
+            align-self: center;
+        }
+    }
 }
