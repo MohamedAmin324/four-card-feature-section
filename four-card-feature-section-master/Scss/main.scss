@@ -1,6 +1,6 @@
 // Reset styles and Global variables
 @use "tools/resets";
-@use "helpers/global-variables" as *;
+@use "helpers" as *;
 
 // Website components
 @use "components/body";

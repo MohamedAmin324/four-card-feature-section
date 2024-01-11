@@ -1,0 +1,7 @@
+// media queries
+
+@mixin set-desktop-layout($breakpoint) {
+    @media (width > $breakpoint) {
+        @content;
+    }
+}
