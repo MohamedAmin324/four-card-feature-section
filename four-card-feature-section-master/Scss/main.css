@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  margin-bottom: 1.8rem;
+  margin-bottom: 3.3rem;
   text-align: center;
 }
 header .header__text--weight-400 {
@@ -24,4 +24,10 @@ header .header__text--weight-600 {
 }
 header .header__text--weight-200 {
   font-weight: 200;
+}
+header > :not(:last-child) {
+  margin: 10px;
+}
+header .header__text--medium-font {
+  font-size: 22px;
 }/*# sourceMappingURL=main.css.map */

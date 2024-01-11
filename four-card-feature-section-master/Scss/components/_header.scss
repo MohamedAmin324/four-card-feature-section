@@ -1,12 +1,20 @@
 @use "../helpers/global-variables" as *;
 
 header {
-    margin-bottom: 1.8rem;
+    margin-bottom: 3.3rem;
     text-align: center;
 
     @each $weight-value in $font-weights {
         .header__text--weight-#{$weight-value} {
             font-weight: $weight-value;
         }
+    }
+
+    & > :not(:last-child) {
+            margin: 10px;
+    }
+
+    .header__text--medium-font {
+        font-size: 22px;
     }
 }
